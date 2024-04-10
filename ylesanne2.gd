@@ -14,7 +14,7 @@ func _ready():
 	var külg2 := 10
 
 	var pindala := külg1 * külg2
-	print("Ristküliku pindala on", pindala)
+	print("Ristküliku pindala on ", pindala)
 
 	if külg1 == külg2:
 		print("Tegemist on ruuduga.")

@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2ekll4k6dpwj"]
+
+[ext_resource type="Script" path="res://ylesanne8.gd" id="1_d46y3"]
+[ext_resource type="Texture2D" uid="uid://dj337b40wqjoe" path="res://vs.jpg" id="2_70sek"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_d46y3")
+
+[node name="Vs" type="Sprite2D" parent="."]
+position = Vector2(574.5, 323.5)
+scale = Vector2(1.64143, 1.47836)
+texture = ExtResource("2_70sek")
+metadata/_edit_lock_ = true
+
+[node name="UUS MÄNG" type="Button" parent="."]
+offset_left = 524.0
+offset_top = 96.0
+offset_right = 672.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 30
+text = "UUS MÄNG"
+
+[node name="KIVI" type="Button" parent="."]
+offset_left = 81.0
+offset_top = 462.0
+offset_right = 210.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 30
+text = "KIVI"
+
+[node name="KÄÄRID" type="Button" parent="."]
+offset_left = 391.0
+offset_top = 461.0
+offset_right = 522.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 30
+text = "KÄÄRID"
+
+[node name="PABER" type="Button" parent="."]
+offset_left = 236.0
+offset_top = 460.0
+offset_right = 368.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 30
+text = "PABER"
+
+[node name="pealkiri" type="RichTextLabel" parent="."]
+offset_left = 404.0
+offset_top = 19.0
+offset_right = 918.0
+offset_bottom = 87.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 48
+text = "KIVI-PABER-KÄÄRID"
+
+[node name="kasutaja punktid" type="RichTextLabel" parent="."]
+offset_left = 52.0
+offset_top = 29.0
+offset_right = 208.0
+offset_bottom = 69.0
+theme_override_font_sizes/normal_font_size = 22
+text = "PUNKTID"
+
+[node name="arvut punktid" type="RichTextLabel" parent="."]
+offset_left = 951.0
+offset_top = 35.0
+offset_right = 1066.0
+offset_bottom = 75.0
+theme_override_font_sizes/normal_font_size = 22
+text = "PUNKTID"
+
+[node name="tulemus" type="RichTextLabel" parent="."]
+offset_left = 529.0
+offset_top = 158.0
+offset_right = 689.0
+offset_bottom = 221.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "TULEMUS"
+
+[node name="kasutaja valik" type="RichTextLabel" parent="."]
+offset_left = 97.0
+offset_top = 300.0
+offset_right = 420.0
+offset_bottom = 366.0
+theme_override_font_sizes/normal_font_size = 40
+text = "KASUTAJA VALIK"
+
+[node name="arvuti_valik" type="RichTextLabel" parent="."]
+offset_left = 783.0
+offset_top = 291.0
+offset_right = 1080.0
+offset_bottom = 380.0
+theme_override_font_sizes/normal_font_size = 40
+text = "ARVUTI VALK"
+
+[connection signal="pressed" from="KIVI" to="." method="_on_kivi_pressed"]
+[connection signal="pressed" from="KÄÄRID" to="." method="_on_käärid_pressed"]
+[connection signal="pressed" from="PABER" to="." method="_on_paber_pressed"]

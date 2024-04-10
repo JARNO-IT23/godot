@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckb00fgr222qc"]
+
+[ext_resource type="Texture2D" uid="uid://diu5fsug4h0kd" path="res://zalto.jpg" id="1_tqyd1"]
+[ext_resource type="FontFile" uid="uid://bwtjhode77k3g" path="res://VT323-Regular.ttf" id="2_58fof"]
+
+[node name="Zalto" type="Sprite2D"]
+visible = false
+position = Vector2(576, 325.75)
+scale = Vector2(0.956667, 0.808657)
+texture = ExtResource("1_tqyd1")
+metadata/_edit_lock_ = true
+
+[node name="padrunid" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -564.46
+offset_top = 299.571
+offset_right = -236.46
+offset_bottom = 378.571
+theme_override_fonts/normal_font = ExtResource("2_58fof")
+theme_override_font_sizes/normal_font_size = 60
+text = "padruneid"
+tab_size = 10
+
+[node name="gameover" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -248.78
+offset_top = -57.8119
+offset_right = 342.22
+offset_bottom = 142.188
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_58fof")
+theme_override_font_sizes/normal_font_size = 120
+text = "Game over"
+tab_size = 10
+
+[node name="skoor" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 266.55
+offset_top = -390.462
+offset_right = 594.55
+offset_bottom = -311.462
+theme_override_fonts/normal_font = ExtResource("2_58fof")
+theme_override_font_sizes/normal_font_size = 60
+text = "Skoor"
+tab_size = 10
+
+[node name="tegevused" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -587.456
+offset_top = -378.096
+offset_right = -259.456
+offset_bottom = -299.096
+theme_override_fonts/normal_font = ExtResource("2_58fof")
+theme_override_font_sizes/normal_font_size = 60
+text = "Tegevus"
+tab_size = 10
+
+[node name="elud" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 281.185
+offset_top = 315.647
+offset_right = 609.185
+offset_bottom = 394.647
+theme_override_fonts/normal_font = ExtResource("2_58fof")
+theme_override_font_sizes/normal_font_size = 60
+text = "Elud"
+tab_size = 10
